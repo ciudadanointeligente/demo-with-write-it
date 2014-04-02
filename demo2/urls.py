@@ -10,3 +10,9 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
 )
+#Writeit specific urls
+urlpatterns += patterns('',
+                        url(r'^', include('nuntium.urls')),
+                        url(r'^', include('nuntium.user_section.urls')),
+                        (r'accounts/', include('django.contrib.auth.urls')),
+                             )

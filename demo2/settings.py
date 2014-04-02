@@ -80,3 +80,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+EXTRA_APPS = ()
+try:
+    from writeit_settings import *
+    INSTALLED_APPS += EXTRA_APPS
+except ImportError:
+    pass
+
+EXTRA_APPS = ()
+try:
+    from local_settings import *
+    INSTALLED_APPS += EXTRA_APPS
+except ImportError:
+    pass
