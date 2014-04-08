@@ -10,15 +10,16 @@ MIDDLEWARE_CLASSES = (
         # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 EXTRA_APPS = (
-    'django.contrib.sites',
-    'south',
-    'popit',
-    'subdomains',
-    'djangoplugins',
-    'tastypie',
     'nuntium',
     'contactos',
     'mailit',
+    'django.contrib.sites',
+    'south',
+    'popit',
+    'markdown_deux',
+    'subdomains',
+    'djangoplugins',
+    'tastypie',
 )
 NEW_ANSWER_DEFAULT_SUBJECT_TEMPLATE = ''
 SITE_ID=1
