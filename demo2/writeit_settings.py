@@ -24,6 +24,9 @@ EXTRA_APPS = (
 NEW_ANSWER_DEFAULT_SUBJECT_TEMPLATE = ''
 SITE_ID=1
 ROOT_URLCONF = 'nuntium.subdomain_urls'
+#DEFAULT_FROM_DOMAIN
+DEFAULT_FROM_DOMAIN = 'demo-writeit.ciudadanointeligente.org'
+
 HAYSTACK_CONNECTIONS = {
     'default': {
                     'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
