@@ -1,1 +1,2 @@
+-e git+https://github.com/mysociety/popit-django#egg=popit-django
 -e git://github.com/ciudadanointeligente/write-it.git@packaging#egg=write-it
